@@ -1,0 +1,52 @@
+= Algorithms implemented using the NRW Abitur Classes
+
+A collection of algorithms implemented using the classes provided by the NRW Informatik Abitur.
+
+== Sorting Algorithms
+
+A collection of sorting algorithms implemented using the classes provided by the NRW Informatik Abitur.
+
+The following sorting algorithms are implemented:
+
+* Insertion Sort
+* Selection Sort
+* Bubble Sort
+
+== Searching Algorithms
+
+A collection of searching algorithms implemented using the classes provided by the NRW Informatik Abitur.
+
+The following searching algorithms are implemented:
+
+* Linear Search
+* Binary Search
+
+== Graph Algorithms
+
+A collection of graph algorithms implemented using the classes provided by the NRW Informatik Abitur.
+
+The following graph algorithms are implemented:
+
+* Depth First Search
+* Breadth First Search
+* Dijkstra's Algorithm
+
+== Tree Algorithms
+
+A collection of tree algorithms implemented using the classes provided by the NRW Informatik Abitur.
+
+The following tree algorithms are implemented:
+
+* Preorder Traversal
+* Inorder Traversal
+* Postorder Traversal
+* Number of Nodes
+* Number of Leaves
+* Height of Tree
+
+=== Binary Search Tree
+
+The following binary search tree algorithms are implemented:
+
+* Get the smallest element
+* Get the largest element
