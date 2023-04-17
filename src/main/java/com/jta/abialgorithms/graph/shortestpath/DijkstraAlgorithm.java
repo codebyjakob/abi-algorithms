@@ -12,7 +12,7 @@ public final class DijkstraAlgorithm implements GraphShortestPathAlgorithm {
   @Override
   public List<Vertex> getShortestPath(
       final Graph graph, final Vertex source, final Vertex target) {
-    graph.setAllEdgeMarks(false);
+    graph.setAllVertexMarks(false);
     Vertex startVertex = FirstVertexRetriever.getFirstVertex(graph);
     if (startVertex == null) {
       return null;
