@@ -20,12 +20,12 @@ public final class IterativeDepthFirstSearch implements GraphSearchAlgorithm {
     startVertex.setMark(true);
     verticesToVisit.push(startVertex);
     while (!verticesToVisit.isEmpty()) {
-      Vertex current = verticesToVisit.top();
+      Vertex currentVertex = verticesToVisit.top();
       verticesToVisit.pop();
-      if (current.getID().equals(vertex.getID())) {
-        return current;
+      if (currentVertex.getID().equals(vertex.getID())) {
+        return currentVertex;
       }
-      List<Vertex> neighbors = graph.getNeighbours(current);
+      List<Vertex> neighbors = graph.getNeighbours(currentVertex);
       neighbors.toFirst();
       while (neighbors.hasAccess()) {
         Vertex neighbor = neighbors.getContent();
