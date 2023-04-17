@@ -31,11 +31,11 @@ public final class DijkstraAlgorithm implements GraphShortestPathAlgorithm {
         return null;
       }
       currentVertex.setMark(true);
+      int currentVertexIndex = getIndexOfVertex(
+          graph.getVertices(), currentVertex);
       List<Vertex> neighbors = graph.getNeighbours(currentVertex);
       neighbors.toFirst();
       while (neighbors.hasAccess()) {
-        int currentVertexIndex = getIndexOfVertex(
-            graph.getVertices(), currentVertex);
         Vertex neighbor = neighbors.getContent();
         if (!neighbor.isMarked()) {
           int neighborIndex = getIndexOfVertex(graph.getVertices(), neighbor);
