@@ -14,9 +14,9 @@ The following sorting algorithms are implemented:
 
 == Search Algorithms
 
-A collection of searching algorithms implemented using the classes provided by the NRW Informatik Abitur.
+A collection of search algorithms implemented using the classes provided by the NRW Informatik Abitur.
 
-The following searching algorithms are implemented:
+The following search algorithms are implemented:
 
 * Linear Search
 * Binary Search
@@ -41,7 +41,9 @@ The following tree algorithms are implemented:
 * Inorder Traversal
 * Postorder Traversal
 * Number of Nodes
+* Number of Nodes at a certain level
 * Number of Leaves
+* Number of Leaves at a certain level
 * Height of Tree
 
 === Binary Search Tree

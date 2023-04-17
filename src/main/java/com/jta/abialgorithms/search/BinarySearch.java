@@ -42,6 +42,7 @@ public final class BinarySearch implements SearchAlgorithm {
       if (currentElement.compareTo(previousElement) < 0) {
         return false;
       }
+      previousElement = currentElement;
       list.next();
     }
     return true;

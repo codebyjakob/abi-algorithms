@@ -8,29 +8,30 @@ import com.jta.abialgorithms.datastructures.linear.Stack;
 /**
  * An implementation of the iterative depth-first search algorithm.
  */
-public class IterativeDepthFirstSearch implements GraphSearchAlgorithm {
+public final class IterativeDepthFirstSearch implements GraphSearchAlgorithm {
   @Override
   public Vertex search(final Graph graph, final Vertex vertex) {
-    Vertex startingVertex = FirstVertexRetriever.getFirstVertex(graph);
-    if (startingVertex == null) {
+    graph.setAllEdgeMarks(false);
+    Vertex startVertex = FirstVertexRetriever.getFirstVertex(graph);
+    if (startVertex == null) {
       return null;
     }
-    graph.setAllEdgeMarks(false);
-    Stack<Vertex> stack = new Stack<>();
-    stack.push(startingVertex);
-    while (!stack.isEmpty()) {
-      Vertex current = stack.top();
+    Stack<Vertex> verticesToVisit = new Stack<>();
+    startVertex.setMark(true);
+    verticesToVisit.push(startVertex);
+    while (!verticesToVisit.isEmpty()) {
+      Vertex current = verticesToVisit.top();
+      verticesToVisit.pop();
       if (current.getID().equals(vertex.getID())) {
         return current;
       }
-      stack.pop();
-      current.setMark(true);
       List<Vertex> neighbors = graph.getNeighbours(current);
       neighbors.toFirst();
       while (neighbors.hasAccess()) {
         Vertex neighbor = neighbors.getContent();
         if (!neighbor.isMarked()) {
-          stack.push(neighbor);
+          neighbor.setMark(true);
+          verticesToVisit.push(neighbor);
         }
         neighbors.next();
       }
