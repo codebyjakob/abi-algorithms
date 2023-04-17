@@ -36,6 +36,7 @@ public final class BinarySearch implements SearchAlgorithm {
   private <T extends Comparable<T>> boolean isSorted(final List<T> list) {
     list.toFirst();
     T previousElement = list.getContent();
+    list.next();
     while (list.hasAccess()) {
       T currentElement = list.getContent();
       if (currentElement.compareTo(previousElement) < 0) {
