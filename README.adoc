@@ -1,4 +1,4 @@
-= Algorithms implemented using the NRW Abitur Classes
+= Algorithms implemented using the NRW Abitur classes
 
 A collection of algorithms implemented using the classes provided by the NRW Informatik Abitur.
 
@@ -12,7 +12,7 @@ The following sorting algorithms are implemented:
 * Selection Sort
 * Bubble Sort
 
-== Searching Algorithms
+== Search Algorithms
 
 A collection of searching algorithms implemented using the classes provided by the NRW Informatik Abitur.
 
