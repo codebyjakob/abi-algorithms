@@ -10,7 +10,7 @@ import com.jta.abialgorithms.datastructures.linear.List;
 public final class RecursiveDepthFirstSearch implements GraphSearchAlgorithm {
   @Override
   public Vertex search(final Graph graph, final Vertex vertex) {
-    graph.setAllEdgeMarks(false);
+    graph.setAllVertexMarks(false);
     Vertex startVertex = FirstVertexRetriever.getFirstVertex(graph);
     if (startVertex == null) {
       return null;
