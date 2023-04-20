@@ -17,6 +17,8 @@ public final class FirstVertexRetriever {
    * @return the first vertex of the graph
    */
   public static Vertex getFirstVertex(final Graph graph) {
-    return graph.getVertices().getContent();
+    List<Vertex> vertices = graph.getVertices();
+    vertices.toFirst();
+    return vertices.getContent();
   }
 }
