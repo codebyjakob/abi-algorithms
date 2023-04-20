@@ -21,7 +21,7 @@ public final class DijkstraAlgorithm implements GraphShortestPathAlgorithm {
     double[] distances = new double[numberOfVertices];
     Vertex[] predecessors = new Vertex[numberOfVertices];
     for (int i = 0; i < numberOfVertices; i++) {
-      distances[i] = Integer.MAX_VALUE;
+      distances[i] = Double.MAX_VALUE;
       predecessors[i] = null;
     }
     distances[getIndexOfVertex(graph.getVertices(), source)] = 0;
