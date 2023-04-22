@@ -1,4 +1,4 @@
-= Algorithms implemented using the NRW Abitur classes
+= Algorithms implemented using the NRW Informatik Abitur classes
 
 A collection of algorithms implemented using the classes provided by the NRW Informatik Abitur.
 
