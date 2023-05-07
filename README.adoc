@@ -4,7 +4,7 @@ A collection of algorithms implemented using the classes provided by the NRW Inf
 
 == Sorting Algorithms
 
-A collection of various sorting algorithms implemented using the classes provided by the NRW Informatik Abitur.
+A collection of sorting algorithms implemented using the classes provided by the NRW Informatik Abitur.
 
 The following sorting algorithms are implemented:
 
